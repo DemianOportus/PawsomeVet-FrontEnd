@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Roboto';
+  font-size: 25px;
+}
+
+h1 {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+p {
+  color: #6C6B6B;
+  line-height: 1.7;
+}
+
+.bodyText {
+  color: #6C6B6B;
+}
+
+#footer {
+  background-image: url("./images/footer-wave.png");
+  background-size: cover;
+}
+
+/* Progress bar */
+
+.progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.progress-bar__line {
+  width: 90%;
+  height: 1.5rem; 
+  background-color: #e5e7eb;
+  display: flex;
+}
+
+.progress-bar__line-fill {
+  background-color: #EEB506;
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.progress-bar__checkmarks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -2rem;
+}
+
+.progress-bar__circle {
+  width: 5rem; 
+  height: 5rem; 
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: -20px;
+}
+
+.progress-bar__circle.active {
+  background-color: #EEB506;
+}
+
+.checkmark {
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.step-label {
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+
+
+
